@@ -1,10 +1,11 @@
 % Description
 
-\ProvidesClass{resume}[2023/03/14 custom resume class]
+\ProvidesClass{resume}[2025 custom resume class]
 
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
 \usepackage{parskip} % Remove paragraph indentation
+\usepackage{enumitem} % Utilities for lists
 \usepackage{xhfill} % Adds horizontal line
 \usepackage{mathabx} % add some symbols
 \usepackage{bold-extra} % Allows bold and small caps fonts together
@@ -28,7 +29,7 @@
         \vspace{-\baselineskip} % tighten space between lines
         \noindent\xrfill[0.8ex]{1pt} % thin horizontal line
         
-        \@address $\;\;\blackdiamond\;$ \@phone $\;\;\blackdiamond\;$ \@email % insert contact info
+        \large \@address $\;\;\blackdiamond\;$ \@phone $\;\;\blackdiamond\;$ \@email % insert contact info
     \end{center}
 }
 %----------------------------------------------------------------------------------------
